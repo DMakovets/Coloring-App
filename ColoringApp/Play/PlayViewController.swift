@@ -64,12 +64,12 @@ extension PlayViewController {
     @objc func startPresentationInfo(){
         let userDefaults = UserDefaults.standard
         let presentationWasViewed = userDefaults.bool(forKey: "presentationWasViewed")
-        if presentationWasViewed ==  false {
+      //  if presentationWasViewed ==  false {
         let storyboard = UIStoryboard(name: "Training", bundle: nil)
         if let pageViewController = storyboard.instantiateViewController(withIdentifier: "TrainingPageVC") as? TrainingPageVC {
             pageViewController.modalPresentationStyle = .overCurrentContext
             present(pageViewController, animated: true, completion: nil)
-            }
+           // }
         }
     }
     
