@@ -1,0 +1,42 @@
+//
+//  TabBarView.swift
+//  ColoringApp
+//
+//  Created by Denis Makovets on 5/18/20.
+//  Copyright © 2020 Denis Makovets. All rights reserved.
+//
+
+import UIKit
+
+class TabBarView: UIView {
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        loadViewFromNib()
+        
+    }
+    
+    func loadViewFromNib() -> UIView {
+        let bundle = Bundle.init(for: type(of: self))
+        let nib = UINib(nibName: "TabBar", bundle: bundle)
+        let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
+        view.frame = bounds
+        view.autoresizingMask = [ .flexibleWidth, .flexibleHeight]
+        addSubview(view)
+        view.layer.cornerRadius = 25
+        view.layer.shadowColor = UIColor.lightGray.cgColor
+        view.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+        view.layer.shadowRadius = 8.0
+        view.layer.shadowOpacity = 0.5
+        view.layer.masksToBounds = false
+        view.layer.backgroundColor = UIColor.white.cgColor
+        return view
+        
+    }
+
+//    @IBAction func infoButton(_ sender: Any) {
+//        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyBoard.instantiateViewController(withIdentifier: "InfoViewController") as! InfoViewController
+//               self.present(vc, animated: false, completion: nil)
+//           }
+}

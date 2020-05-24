@@ -1,0 +1,6 @@
+framework module Pods_ColoringApp {
+  umbrella header "Pods-ColoringApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

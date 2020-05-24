@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15508"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FullSettingView" customModule="ColoringApp" customModuleProvider="target">
+            <connections>
+                <outlet property="fullSettingButton" destination="fkK-xs-vfv" id="ywF-eP-sdv"/>
+                <outlet property="fullSettingView" destination="iN0-l3-epB" id="ptj-mO-pvu"/>
+                <outlet property="soundButton" destination="GiI-0G-FtV" id="WY6-0T-Q48"/>
+                <outlet property="vibrationButton" destination="kqa-ZE-D0c" id="LrY-uI-FwB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="158"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="WkY-s8-skD">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="158"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkK-xs-vfv">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="0sR-q4-4vs"/>
+                                <constraint firstAttribute="height" constant="50" id="N3h-Ea-VHs"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                            <state key="normal" image="005-settings"/>
+                            <connections>
+                                <action selector="tapFullSettingButton:" destination="-1" eventType="touchUpInside" id="oKp-vS-ZBI"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqa-ZE-D0c">
+                            <rect key="frame" x="0.0" y="54" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="a9q-gc-7V1"/>
+                                <constraint firstAttribute="height" constant="50" id="lVR-BJ-Ane"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                            <state key="normal" image="003-vibra-on"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GiI-0G-FtV">
+                            <rect key="frame" x="0.0" y="108" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="F47-NF-i0O"/>
+                                <constraint firstAttribute="height" constant="50" id="kXt-du-xNY"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                            <state key="normal" image="002-audio-on"/>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="WkY-s8-skD" secondAttribute="trailing" id="C5c-Iy-3eD"/>
+                <constraint firstItem="WkY-s8-skD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QOF-bB-CwA"/>
+                <constraint firstItem="WkY-s8-skD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="VO2-8P-HCQ"/>
+                <constraint firstAttribute="bottom" secondItem="WkY-s8-skD" secondAttribute="bottom" id="ubk-ua-Kwy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="90"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="002-audio-on" width="303" height="303"/>
+        <image name="003-vibra-on" width="309" height="309"/>
+        <image name="005-settings" width="309" height="309"/>
+    </resources>
+</document>

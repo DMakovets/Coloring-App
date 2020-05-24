@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15508"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScoreView">
+            <connections>
+                <outlet property="scoreItem" destination="tBp-jZ-ApR" id="Xxe-Ju-KiS"/>
+                <outlet property="scoreLabel" destination="tBp-jZ-ApR" id="7st-RA-W9b"/>
+                <outlet property="scoreView" destination="iN0-l3-epB" id="1io-QX-Qu8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15K" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBp-jZ-ApR">
+                    <rect key="frame" x="63.5" y="15" width="33" height="20"/>
+                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.38672643375457905" blue="0.80739778402450668" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magic fill" translatesAutoresizingMaskIntoConstraints="NO" id="eIc-bA-9Q8">
+                    <rect key="frame" x="15" y="13" width="31.5" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="31.399999999999999" id="20h-nm-Zjc"/>
+                        <constraint firstAttribute="height" constant="24" id="l87-xC-QXN"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYN-GX-jfE">
+                    <rect key="frame" x="110" y="0.0" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="OE2-0h-q4S"/>
+                        <constraint firstAttribute="width" constant="50" id="ZPV-iN-Au7"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                    <state key="normal" image="091-plus-1"/>
+                    <connections>
+                        <action selector="moreColorButton:" destination="-1" eventType="touchUpInside" id="Zl4-Lo-RuN"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YYN-GX-jfE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Hd6-fR-c0b"/>
+                <constraint firstAttribute="trailing" secondItem="YYN-GX-jfE" secondAttribute="trailing" id="OCN-rF-zWL"/>
+                <constraint firstItem="tBp-jZ-ApR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="QII-G2-3W0"/>
+                <constraint firstItem="tBp-jZ-ApR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Yn1-TJ-38I"/>
+                <constraint firstItem="eIc-bA-9Q8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="ZTd-Ak-955"/>
+                <constraint firstItem="eIc-bA-9Q8" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="sqN-9y-mW2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="140.625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="091-plus-1" width="72" height="72"/>
+        <image name="magic fill" width="372" height="285"/>
+    </resources>
+</document>

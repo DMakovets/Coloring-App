@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aLf-c8-wgv">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15508"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="XPT-w5-bvI">
+            <objects>
+                <viewController storyboardIdentifier="InfoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aLf-c8-wgv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eoV-wt-snF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INFO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kd0-dz-ZiU">
+                                <rect key="frame" x="70" y="32" width="39.5" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="4Kf-SP-jb1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rjr-xf-18f">
+                                <rect key="frame" x="30" y="615" width="315" height="32"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlZ-cf-tsw">
+                                        <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="4ZX-KS-8zL"/>
+                                            <constraint firstAttribute="height" constant="32" id="DeS-ze-lEH"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="019-explore"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvN-uA-YDa">
+                                        <rect key="frame" x="94.5" y="0.0" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="VOy-R7-ldj"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="017-mypaints"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xtK-LP-ukf">
+                                        <rect key="frame" x="188.5" y="0.0" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="9IT-CW-uIf"/>
+                                            <constraint firstAttribute="width" constant="32" id="BB2-vf-uwn"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="018-gifts"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWL-5t-Jrd">
+                                        <rect key="frame" x="283" y="0.0" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="ffj-IK-3lx"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="016-infoG"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUGGESTION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sc5-fa-XCZ">
+                                <rect key="frame" x="195.5" y="32" width="109.5" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="1JX-xN-Ix7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G50-fa-9hm" customClass="MyView" customModule="ColoringApp" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="258.5" width="300" height="150"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="IDl-3q-eao"/>
+                                    <constraint firstAttribute="height" constant="150" id="WV0-jr-mop"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Cqe-QE-hTc" appends="YES" id="4Lu-0n-Gcp"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="G50-fa-9hm" firstAttribute="centerX" secondItem="eoV-wt-snF" secondAttribute="centerX" id="46Q-WU-Irg"/>
+                            <constraint firstItem="6hl-Ab-ZGT" firstAttribute="trailing" secondItem="rjr-xf-18f" secondAttribute="trailing" constant="30" id="Egu-2v-46s"/>
+                            <constraint firstItem="Kd0-dz-ZiU" firstAttribute="leading" secondItem="6hl-Ab-ZGT" secondAttribute="leading" constant="70" id="K33-RA-c9q"/>
+                            <constraint firstItem="6hl-Ab-ZGT" firstAttribute="trailing" secondItem="sc5-fa-XCZ" secondAttribute="trailing" constant="70" id="LAc-Cd-qex"/>
+                            <constraint firstItem="rjr-xf-18f" firstAttribute="leading" secondItem="6hl-Ab-ZGT" secondAttribute="leading" constant="30" id="Np0-5k-aBi"/>
+                            <constraint firstItem="6hl-Ab-ZGT" firstAttribute="bottom" secondItem="rjr-xf-18f" secondAttribute="bottom" constant="20" id="iVy-PM-TL2"/>
+                            <constraint firstItem="G50-fa-9hm" firstAttribute="centerY" secondItem="eoV-wt-snF" secondAttribute="centerY" id="lp1-LJ-flb"/>
+                            <constraint firstItem="sc5-fa-XCZ" firstAttribute="centerY" secondItem="Kd0-dz-ZiU" secondAttribute="centerY" id="r9F-6w-H18"/>
+                            <constraint firstItem="Kd0-dz-ZiU" firstAttribute="top" secondItem="6hl-Ab-ZGT" secondAttribute="top" constant="32" id="rM5-Zu-2sg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6hl-Ab-ZGT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fzD-hz-ARx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Cqe-QE-hTc"/>
+            </objects>
+            <point key="canvasLocation" x="-460" y="137"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="016-infoG" width="98" height="98"/>
+        <image name="017-mypaints" width="101" height="101"/>
+        <image name="018-gifts" width="96" height="96"/>
+        <image name="019-explore" width="101" height="101"/>
+    </resources>
+</document>

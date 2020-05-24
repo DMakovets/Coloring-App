@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15508"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Color5kView" customModule="ColoringApp" customModuleProvider="target">
+            <connections>
+                <outlet property="color5kFullView" destination="iN0-l3-epB" id="Tra-xO-5d0"/>
+                <outlet property="color5kView" destination="cck-gM-Z21" id="6vk-Xy-hey"/>
+                <outlet property="mostPopView" destination="KgH-NK-1nm" id="hUg-3q-nBi"/>
+                <outlet property="priceButton" destination="hxI-Sl-DH0" id="TNr-M7-Sj8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="308" height="78"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cck-gM-Z21">
+                    <rect key="frame" x="8" y="8" width="300" height="70"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEm-md-Gl2">
+                            <rect key="frame" x="53" y="23" width="57.5" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="7s7-M3-pUx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
+                            <color key="textColor" red="1" green="0.38672643379999999" blue="0.80739778399999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="083" translatesAutoresizingMaskIntoConstraints="NO" id="Jq7-NU-lI3">
+                            <rect key="frame" x="15" y="23" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="8si-56-ZnI"/>
+                                <constraint firstAttribute="width" constant="24" id="XbO-eh-q8U"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxI-Sl-DH0">
+                            <rect key="frame" x="205" y="20" width="80" height="30"/>
+                            <color key="backgroundColor" red="0.43921568630000002" green="0.14117647059999999" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="7Fh-eV-csP"/>
+                                <constraint firstAttribute="width" constant="80" id="z3j-Xe-xSp"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="$3.49">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+ 2000 free bonus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsy-0r-eGn">
+                            <rect key="frame" x="53" y="41" width="97.5" height="14"/>
+                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                            <color key="textColor" red="0.43921568630000002" green="0.14117647059999999" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KgH-NK-1nm">
+                            <rect key="frame" x="-8" y="-8" width="73" height="17"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOST POPULAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0M-cb-Jeu">
+                                    <rect key="frame" x="12" y="5" width="49" height="7"/>
+                                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="6"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.97647058823529409" green="0.85490196078431369" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="o0M-cb-Jeu" firstAttribute="centerX" secondItem="KgH-NK-1nm" secondAttribute="centerX" id="Dh3-9I-t1J"/>
+                                <constraint firstItem="o0M-cb-Jeu" firstAttribute="centerY" secondItem="KgH-NK-1nm" secondAttribute="centerY" id="PKX-gL-ERQ"/>
+                                <constraint firstAttribute="height" constant="17" id="VMA-ct-Gtg"/>
+                                <constraint firstAttribute="width" constant="73" id="XGg-od-Q7x"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="1x5-dW-dFI"/>
+                        <constraint firstAttribute="trailing" secondItem="hxI-Sl-DH0" secondAttribute="trailing" constant="15" id="3HW-QO-NjD"/>
+                        <constraint firstItem="Jq7-NU-lI3" firstAttribute="leading" secondItem="cck-gM-Z21" secondAttribute="leading" constant="15" id="7Bi-BS-mvk"/>
+                        <constraint firstItem="Jq7-NU-lI3" firstAttribute="centerY" secondItem="cck-gM-Z21" secondAttribute="centerY" id="7wU-NG-hqP"/>
+                        <constraint firstAttribute="width" constant="300" id="B9R-u1-yyg"/>
+                        <constraint firstItem="xEm-md-Gl2" firstAttribute="leading" secondItem="Jq7-NU-lI3" secondAttribute="trailing" constant="14" id="BxY-iO-KCo"/>
+                        <constraint firstItem="hxI-Sl-DH0" firstAttribute="centerY" secondItem="cck-gM-Z21" secondAttribute="centerY" id="Tyj-ZC-u0o"/>
+                        <constraint firstItem="xEm-md-Gl2" firstAttribute="top" secondItem="Jq7-NU-lI3" secondAttribute="top" id="ecu-Am-43p"/>
+                        <constraint firstItem="xsy-0r-eGn" firstAttribute="leading" secondItem="xEm-md-Gl2" secondAttribute="leading" id="g2F-fk-mTk"/>
+                        <constraint firstItem="KgH-NK-1nm" firstAttribute="leading" secondItem="cck-gM-Z21" secondAttribute="leading" constant="-8" id="g5A-XG-agS"/>
+                        <constraint firstItem="KgH-NK-1nm" firstAttribute="top" secondItem="cck-gM-Z21" secondAttribute="top" constant="-8" id="hWJ-34-8mt"/>
+                        <constraint firstAttribute="bottom" secondItem="xsy-0r-eGn" secondAttribute="bottom" constant="15" id="hWd-fs-5VM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cck-gM-Z21" secondAttribute="trailing" id="KRc-mn-CKT"/>
+                <constraint firstItem="cck-gM-Z21" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Ufc-uT-awr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="141"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="083" width="284" height="285"/>
+    </resources>
+</document>

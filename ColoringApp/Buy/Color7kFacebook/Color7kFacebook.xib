@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15508"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Color7kVIew">
+            <connections>
+                <outlet property="color7KView" destination="iN0-l3-epB" id="u9P-Dp-rzI"/>
+                <outlet property="color7kView" destination="VnT-pm-hXF" id="9sI-Sp-bsH"/>
+                <outlet property="facebookButton" destination="E3T-7o-4HJ" id="mRn-Co-JK0"/>
+                <outlet property="unlockView" destination="xMc-DX-8ay" id="C8H-gz-H6L"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="308" height="78"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VnT-pm-hXF">
+                    <rect key="frame" x="8" y="8" width="300" height="70"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMc-DX-8ay">
+                            <rect key="frame" x="-8" y="-8" width="73" height="17"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="018-gifts" translatesAutoresizingMaskIntoConstraints="NO" id="tlo-w5-NMF">
+                                    <rect key="frame" x="9" y="5" width="7" height="7"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="7" id="BxT-dj-J8H"/>
+                                        <constraint firstAttribute="width" constant="7" id="lrD-Oz-8sy"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UNLOCK GIFT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1y-TI-81f">
+                                    <rect key="frame" x="22" y="5" width="42" height="7"/>
+                                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="6"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.4392156862745098" green="0.14117647058823529" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstItem="tlo-w5-NMF" firstAttribute="top" secondItem="xMc-DX-8ay" secondAttribute="top" constant="5" id="4g0-3N-yuW"/>
+                                <constraint firstItem="A1y-TI-81f" firstAttribute="centerY" secondItem="xMc-DX-8ay" secondAttribute="centerY" id="Zna-lP-bCc"/>
+                                <constraint firstAttribute="trailing" secondItem="A1y-TI-81f" secondAttribute="trailing" constant="9" id="aUA-bI-1BW"/>
+                                <constraint firstAttribute="width" constant="73" id="ajt-8A-TU4"/>
+                                <constraint firstItem="tlo-w5-NMF" firstAttribute="leading" secondItem="xMc-DX-8ay" secondAttribute="leading" constant="9" id="g9n-cw-v1I"/>
+                                <constraint firstAttribute="bottom" secondItem="tlo-w5-NMF" secondAttribute="bottom" constant="5" id="kgH-KJ-ft7"/>
+                                <constraint firstAttribute="height" constant="17" id="tgm-LK-64H"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88T-pi-TXG">
+                            <rect key="frame" x="53" y="23" width="57.5" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="H5Z-YM-jrJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
+                            <color key="textColor" red="1" green="0.38672643379999999" blue="0.80739778399999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magic fill" translatesAutoresizingMaskIntoConstraints="NO" id="x4K-be-g6E">
+                            <rect key="frame" x="15" y="23" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="Onx-y1-PtE"/>
+                                <constraint firstAttribute="width" constant="24" id="uvB-jQ-6wK"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3T-7o-4HJ">
+                            <rect key="frame" x="205" y="20" width="80" height="30"/>
+                            <color key="backgroundColor" red="0.43921568630000002" green="0.14117647059999999" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="e7d-13-aA0"/>
+                                <constraint firstAttribute="width" constant="80" id="f14-rG-O06"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="10" minY="10" maxX="55" maxY="10"/>
+                            <state key="normal" title="Join" image="person.icloud.fill" catalog="system">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+ exclusive images" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICt-f1-YNH">
+                            <rect key="frame" x="53" y="41" width="102" height="14"/>
+                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="0Zd-rB-mtV"/>
+                        <constraint firstItem="x4K-be-g6E" firstAttribute="leading" secondItem="VnT-pm-hXF" secondAttribute="leading" constant="15" id="1FB-Q6-UWg"/>
+                        <constraint firstAttribute="height" constant="70" id="JYt-jW-Sk6"/>
+                        <constraint firstItem="xMc-DX-8ay" firstAttribute="top" secondItem="VnT-pm-hXF" secondAttribute="top" constant="-8" id="ad5-0f-G23"/>
+                        <constraint firstItem="88T-pi-TXG" firstAttribute="leading" secondItem="x4K-be-g6E" secondAttribute="trailing" constant="14" id="cFo-wh-nDO"/>
+                        <constraint firstItem="x4K-be-g6E" firstAttribute="centerY" secondItem="VnT-pm-hXF" secondAttribute="centerY" id="dgT-FD-bvX"/>
+                        <constraint firstItem="xMc-DX-8ay" firstAttribute="leading" secondItem="VnT-pm-hXF" secondAttribute="leading" constant="-8" id="eAN-WT-S5q"/>
+                        <constraint firstItem="ICt-f1-YNH" firstAttribute="leading" secondItem="88T-pi-TXG" secondAttribute="leading" id="eLO-L6-WgR"/>
+                        <constraint firstItem="E3T-7o-4HJ" firstAttribute="centerY" secondItem="VnT-pm-hXF" secondAttribute="centerY" id="hCh-r4-s6A"/>
+                        <constraint firstAttribute="trailing" secondItem="E3T-7o-4HJ" secondAttribute="trailing" constant="15" id="pHg-8t-8E2"/>
+                        <constraint firstItem="88T-pi-TXG" firstAttribute="top" secondItem="x4K-be-g6E" secondAttribute="top" id="sLg-ys-jQr"/>
+                        <constraint firstAttribute="bottom" secondItem="ICt-f1-YNH" secondAttribute="bottom" constant="15" id="yP6-zP-l6I"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VnT-pm-hXF" secondAttribute="trailing" id="E2o-t0-3Lb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="VnT-pm-hXF" secondAttribute="bottom" id="YiT-N0-dvI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="140.625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="018-gifts" width="96" height="96"/>
+        <image name="magic fill" width="372" height="285"/>
+        <image name="person.icloud.fill" catalog="system" width="64" height="44"/>
+    </resources>
+</document>

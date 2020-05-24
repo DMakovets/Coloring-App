@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15508"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CloseButtonView">
+            <connections>
+                <outlet property="closeButtonVIew" destination="iN0-l3-epB" id="UrC-Mf-fum"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUy-Wx-khg">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    <inset key="imageEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                    <state key="normal" image="014-cancel"/>
+                    <connections>
+                        <action selector="backButton:" destination="-1" eventType="touchUpInside" id="rYg-Cc-wfy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fUy-Wx-khg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AFq-Cy-y3q"/>
+                <constraint firstItem="fUy-Wx-khg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="EEw-B5-Hpn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="fUy-Wx-khg" secondAttribute="bottom" id="Qly-nu-v0U"/>
+                <constraint firstAttribute="trailing" secondItem="fUy-Wx-khg" secondAttribute="trailing" id="zEP-Vv-xyM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="141"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="014-cancel" width="306" height="306"/>
+    </resources>
+</document>
